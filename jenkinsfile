@@ -9,10 +9,5 @@ node {
                  app = docker.build("mennabelalesraa/example-app")
     }    
 
-#    stage('push image') {
-#                          docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-#                           app.push("latest")
-#                         }
-#    }
 }
 

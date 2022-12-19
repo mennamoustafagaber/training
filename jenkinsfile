@@ -8,6 +8,10 @@ node {
     stage('build image') {
                  app = docker.build("mennabelalesraa/example-app")
     }    
-
+    
+    stage('test image') {
+                    app.inside { 
+                         sh 'npm test'
+                     }  
 }
 

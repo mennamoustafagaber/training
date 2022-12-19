@@ -12,6 +12,6 @@ node {
     stage('test image') {
                     app.inside { 
                          sh 'npm test'
-                     }  
+    }                 }  
 }
 

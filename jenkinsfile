@@ -11,7 +11,7 @@ node {
     
     stage('test image') {
                     app.inside { 
-                         sh 'npm test'
+                         sh 'rm -rf node_modules package-lock.json && npm install && npm start && npm test'
     }                 }  
 }
 

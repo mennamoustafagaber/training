@@ -1,4 +1,4 @@
-From node:10.9.0
+From node:latest
 COPY . .
 RUN npm install
 EXPOSE 8000

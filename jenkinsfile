@@ -6,12 +6,12 @@ node {
     }
     
     stage('build image') {
-                 app = docker.build("getintodevops/example-app")
+                 app = docker.build("mjuuso/example-app")
     }    
     
     stage('test image') {
                     app.inside { 
-                         sh 'rm -rf node_modules package-lock.json && npm install && npm test'
+                         sh 'npm test'
     }                 }  
 }
 
